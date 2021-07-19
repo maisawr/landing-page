@@ -1,0 +1,158 @@
+<!-- Desafio - Criar um sistema de e-commerce para cadastro de email na landing page para recebimento de novidades e promoções.
+
+1° Entrega 
+- Site Oficial / Landing page  
+
+Entregáveis: 
+-Template do site oficial 
+-Landing page de promoções, estilo black friday; 
+-Cadastre seu e-mail para receber promoções 
+-Dados no localstorage
+- >Não é preciso ter domínio próprio e recomendamos o Netlify para hospedagem 
+
+1. Qual linguagem devo usar?
+Deve ser utilizado as linguagem de front end para criação de site - HTML e CSS
+2. O que é landing page?
+É uma página web única para cadastro de leads e promover informações pontuais de algum produto
+3. É para fazer um site de e-comerce ou só landing page?
+Realizar somente a Landing Page, visando que ela deve ser de divulgação de um e-commerce. Por exemplo: Landing Page de uma promoção de eletrodomésticos.
+4. É preciso fazer o template da parte da loja?
+Não, somente realizar o design da landing Page
+
+Ideias
+1. Colocar um cronômetro
+2. Colocar uma tela de agradecimento
+3. 
+-->.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <script defer src="scripts/script.js"></script>
+    <title>For Geek BookStore</title>
+
+    <!-- font-family da Logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap" rel="stylesheet">
+
+    <!-- font-family do conteúdo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+
+        <header>
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+    
+            <div class="menu-texto">
+                <button>Produtos</button>
+                <button>Eventos</button>
+                <button>Clube do Livro</button>
+                <button>Curadores</button>
+            </div>
+                
+            <div class="menu-imagem">
+                <button>
+                        <img src="images/user.png">
+                </button>
+                <button>
+                    <img src="images/search.png">
+                </button>
+                <button>
+                    <img src="images/shopping-cart.png">
+                </button>
+            </div>
+        </header>
+    
+        
+        <main>
+     
+            <!-- Descrição -->
+            <section class="section-container">
+    
+                <!-- Título do Serviço --> 
+                <div class="title">
+                    <h1>Clube do Livro</h1>
+                    <p>Estão abertas as <span class="bold">inscrições</span> para o ano de <span class="bold">2021</span> do nosso Clube do Livro!</p>
+                </div>
+                
+                <div class="main-content">
+                    <!-- Vantagens do serviço -->
+                    <div class="description"> 
+                        <div>
+                            <img src="images/sale.png">
+                            <p>Ofertas exclusivas</p>
+                        </div>
+                        
+                        <div>
+                            <img src="images/mail.png">
+                            <p>Notícias de lançamentos antes de publicados no site</p>
+                        </div>
+                        
+                        <div>
+                            <img src="images/chat.png">
+                            <p>Bate-papo com os curadores</p> 
+                        </div>
+                        
+                        <div>
+                            <img src="images/world-book-day.png">
+                            <p>Uma comunidade que ama leitura, sem preconceitos</p>     
+                        </div>
+                    </div>
+    
+                    <!-- Formulário -->
+                    <div class="card-container">
+                        Inscreva-se
+                        <div id="content">
+                            <form id="form">
+                                <input type="text" placeholder="Nome" id="nome">
+                                <input type="text" placeholder="Sobrenome" id="sobrenome">
+                                <input type="text" placeholder="E-mail" id="email">
+                                <input type="submit" value="Quero ser do Clube!" id="submit-button">       
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+            </section>
+            
+            <!-- Formulário -->
+            <!-- <section class="section-container">
+    
+                <div>
+    
+                </div>
+    
+                <div class="card-container">
+                    Inscreva-se
+                    <div id="content">
+                        <form id="form">
+                            <input type="text" placeholder="Nome" id="nome">
+                            <input type="text" placeholder="Sobrenome" id="sobrenome">
+                            <input type="text" placeholder="E-mail" id="email">
+                            <input type="submit" value="Quero ser do Clube!">       
+                        </form>
+                    </div>
+                </div>
+            </section> -->
+        </main>
+        <footer>
+            &copy; Maísa 2021
+            <br />
+            Desafio desenvolvido no Progrma Hiring Coders da Gama Academy
+        </footer>    
+    </div>
+</body>
+</html>
